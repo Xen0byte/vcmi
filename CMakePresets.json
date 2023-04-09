@@ -67,8 +67,8 @@
         },
         {
             "name": "windows-msvc-release",
-            "displayName": "Windows x64 RelWithDebInfo",
-            "description": "VCMI RelWithDebInfo build",
+            "displayName": "Windows x64 Release",
+            "description": "VCMI Relelease build",
             "inherits": "default-release",
             "generator": "Visual Studio 17 2022",
             "architecture": {
@@ -78,6 +78,7 @@
             "cacheVariables": {
                 "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/vcpkg/scripts/buildsystems/vcpkg.cmake",
                 "CMAKE_POLICY_DEFAULT_CMP0091": "NEW",
+                "CMAKE_BUILD_TYPE": "Release",
                 "FORCE_BUNDLED_MINIZIP": "ON"
             }
         },
